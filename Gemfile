@@ -57,8 +57,8 @@ group :test do
 end
 
 group :cucumber do
-	gem 'cucumber'
-	gem 'cucumber-rails'
+	#gem 'cucumber'
+	#gem 'cucumber-rails'
 	gem 'database_cleaner'
 	gem 'factory_girl'
 	gem 'pickle'
