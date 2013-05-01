@@ -3,7 +3,7 @@
 # Copyright (c) Bureau Pels.  All Rights Reserved.
 #============================================================================
 nl:
-  book_multiplier: 'Google Books Multiplier'
+  books_multiplier: 'Google Books Multiplier'
   bureau_pels: 'Bureau Pels'
   bureau_pels_street: 'Boogerd&nbsp;1'
   bureau_pels_zipcode: '1791&nbsp;GW'

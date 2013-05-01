@@ -16,7 +16,11 @@ BooksMultiplier::Application.routes.draw do
 		get "about", :to => 'about#index'
 		get "sysinfo", :to => 'sysinfo#index'
 
-		resources :books
+		resources :books do
+			collection do
+				get :load
+			end
+		end
 	end
 
 	root :to => "welcome#index"

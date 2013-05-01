@@ -24,11 +24,14 @@ ActiveRecord::Schema.define(:version => 20130501124740) do
   end
 
   create_table "books", :force => true do |t|
-    t.string "isbn",      :limit => 30
-    t.string "author",    :limit => 200
-    t.string "title",     :limit => 200
-    t.string "thumbnail", :limit => 200
+    t.string "google_book_id", :limit => 30,  :null => false
+    t.string "isbn_13",        :limit => 30
+    t.string "author",         :limit => 200
+    t.string "title",          :limit => 200
+    t.string "thumbnail",      :limit => 200
   end
+
+  add_index "books", ["google_book_id"], :name => "books_google_book_id_uq", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 50
