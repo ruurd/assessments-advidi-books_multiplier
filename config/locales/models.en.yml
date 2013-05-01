@@ -1,0 +1,13 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+en:
+  activerecord:
+    models:
+      administration: 'Administration'
+      bookyear: 'Bookyear'
+      journal: 'Journal'
+      ledger: 'Ledger'
+      piece: 'Piece'
+      unit: 'Unit'

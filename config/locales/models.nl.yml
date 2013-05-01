@@ -1,0 +1,13 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  activerecord:
+    models:
+      administration: 'Boekhouding'
+      bookyear: 'Boekjaar'
+      journal: 'Dagboek'
+      ledger: 'Grootboek'
+      piece: 'Boekstuk'
+      unit: 'Eenheid'

@@ -1,0 +1,15 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+en:
+  shared:
+    new_header:
+      new: 'New'
+    edit_header:
+      edit: 'Edit'
+    show_header:
+      show: 'Show'
+    show_thead:
+      item: 'Item'
+      value: 'Value'

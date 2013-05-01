@@ -1,0 +1,91 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  about:
+    index:
+      about: 'Over'
+      onestopshop: 'Pecunia is een simpele online boekhouding!'
+      telephone: 'Teleffon'
+      email: 'Email'
+      inforequest: 'Vraag om informatie'
+  announcements:
+    index:
+      announcements: 'Aankondigingen'
+      starts_at: 'Start op'
+      ends_at: 'Eindigt voor'
+      locale: 'Landinstelling'
+      message: 'Mededeling'
+      level: 'Niveau'
+  bookyears:
+    index:
+      year: 'Jaar'
+      start: 'Begin'
+      finish: 'Einde'
+      description: 'Omschrijving'
+    show:
+      year: 'Jaar'
+      start: 'Begin'
+      finish: 'Einde'
+      description: 'Omschrijving'
+  contacts:
+    newmessage:
+      use_of_form: 'Gelieve dit formulier te gebruiken om vragen te stellen of om informatie te vragen.'
+      name: 'Naam'
+      email: 'E-mail'
+      phone: 'Telefoonnummer'
+      subject: 'Onderwerp'
+      message: 'Mededeling'
+    thankyou:
+      thankyou: 'Dank u!'
+      content: 'De inhoud van uw mededeling is aan ons verzonden. Wij nemen zo snel mogelijk contact met u op.'
+      homepage: 'Beginpagina'
+  contacts_mailer:
+    contact_request: 'Contactverzoek'
+    item: 'Item'
+    value: 'Waarde'
+    from: 'Van'
+    email: 'EMail'
+    phone: 'Telefoonnummer'
+    message: 'Mededeling'
+    warning: 'Gelieve dit bericht te beantwoorden. Antwoorden zullen niet worden verwerkt.'
+    regards: 'Hoogachtend, het Pecunia team.'
+  journals:
+    index:
+      code: 'Code'
+      name: 'Naam'
+      description: 'Omschrijving'
+    show:
+      code: 'Code'
+      name: 'Naam'
+      description: 'Omschrijving'
+  ledgers:
+    index:
+      code: 'Code'
+      name: 'Naam'
+      description: 'Omschrijving'
+    show:
+      code: 'Code'
+      name: 'Naam'
+      description: 'Omschrijving'
+  pieces:
+    index:
+      code: 'Code'
+      description: 'Omschrijving'
+    show:
+      code: 'Code'
+      description: 'Omschrijving'
+  units:
+    index:
+      code: 'Code'
+      unitname: 'Naam eenheid'
+      description: 'Omschrijving'
+    show:
+      code: 'Code'
+      unitname: 'Naam eenheid'
+      description: 'Omschrijving'
+  welcome:
+    index:
+      onestopshop: 'Pecunia is uw oplossing voor boekhouden!'
+      announcements: 'Aankondigingen'

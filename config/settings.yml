@@ -1,0 +1,30 @@
+development:
+  host: localhost
+  port: 3000
+  protocol: http
+  from_email: pecunia_dev@localhost
+  content_mail: postmaster@localhost
+  smtp_settings:
+    address: localhost
+    enable_starttls_auto: false
+
+test:
+  host: localhost
+  port: 3000
+  protocol: http
+  from_email: pecunia_test@localhost
+  content_mail: postmaster@localhost
+
+production:
+  host: localhost
+  protocol: https
+  from_email: no-reply@hq.rfpels.nl
+  content_mail: postmaster@localhost
+  smtp_settings:
+    address: localhost
+    enable_starttls_auto: false
+
+translations:
+  application:
+    - en
+    - nl

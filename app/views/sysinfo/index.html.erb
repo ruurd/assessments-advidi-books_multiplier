@@ -1,0 +1,23 @@
+<h1>Pecunia runtime information</h1>
+
+<pre>
+commit-id: <%= @git_version %>
+	it is now: <%= Time.current %>
+	timezone: <%= Time.zone %>
+</pre>
+<h2>Version</h2>
+<pre>commit-id: <%= @git_version %></pre>
+<pre>ruby version: <%= RUBY_VERSION %></pre>
+<pre>rails version: <%= Rails.version %></pre>
+
+<h2>Session</h2>
+<pre>
+<% session.each do |k, v| %><%= k %>: <%= v %>
+<% end %>
+</pre>
+
+<h2>Environment</h2>
+<pre>
+<% ENV.each do |k, v| %><%= k %>: <%= v %>
+<% end %>
+</pre>

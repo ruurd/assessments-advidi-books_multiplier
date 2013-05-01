@@ -1,0 +1,17 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  languages:
+    en: Engels
+    nl: Nederlands
+    de: Duits
+    it: Italiaans
+    zh: Chinees
+    es: Spaans
+    fr: Frans
+    hu: Hongaars
+    cs: Tsjechisch
+    ro: Roemeens
+    da: Deens

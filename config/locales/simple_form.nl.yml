@@ -1,0 +1,36 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  simple_form:
+    "yes": 'Ja'
+    "no": 'Nee'
+    required:
+      text: 'verplicht'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Herstel de volgende problemen a.u.b.:"
+    # Labels and hints examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     sendmessage:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+  date:
+    month_names: ["Januari","Februari","Maart","April","Mei","Juni","Juli","Augustus","September","Oktober","November","December"]
+    abbr_day_names: ["Zo","Ma","Di","Wo","Do","Vr","Za"]
+    formats: 
+      long: "%B %e, %Y"
+      short: "%e %b"
+      confirm: "%e %B %Y"

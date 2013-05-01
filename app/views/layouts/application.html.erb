@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BooksMultiplier</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title><%=  t(:pecunia) %></title>
+	<%= stylesheet_link_tag :application %>
+	<%= javascript_include_tag :application %>
+	<%= favicon_link_tag() %>
+	<%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="navbar navbar-fixed-top navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<a class="btn btn-navbar" data-toggle="collapse" data-parent="#nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<%= link_to t(:pecunia), root_path, :class => "brand" %>
+			<div class="nav-collapse">
+				<%= render 'layouts/application/chooser' %>
+				<%= render 'layouts/application/administrationmenu' %>
+				<%# pull-right tabs you must add in reverse order %>
+				<%= render 'layouts/application/languagemenu' %>
+				<%= render 'layouts/application/usermenu' %>
+				<%= render 'layouts/application/adminmenu' %>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<% flash.each do |level, msg| %>
+				<div class="alert alert-<%= flash_class(level) %>">
+					<a class="close" data-dismiss="alert">&times;</a>
+					<%= content_tag :div, msg, :id => "flash_#{level}" if msg.is_a?(String) %>
+				</div>
+			<% end %>
+			<%= yield %>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<hr/>
+			<footer>
+				<p>&copy; <%= Time.now.year %> Bureau Pels. <%= t('.all_rights_reserved') %>.</p>
+			</footer>
+		</div>
+	</div>
+</div>
 </body>
 </html>
+

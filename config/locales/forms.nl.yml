@@ -1,0 +1,78 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  simple_form:
+    labels:
+      administration:
+        code: 'Code'
+        name: 'Naam'
+        street: 'Straat'
+        zipcode: 'Postcode'
+        place: 'PLaats'
+        latitude: 'Breedtegraad'
+        longitude: 'Lengtegraad'
+        phone: 'Telefoon'
+        fax: 'Fax'
+        registration: 'KVK-nummer'
+        vat_number: 'BTW-nummer'
+        country: 'Land'
+      announcement:
+        starts_at: 'Start op'
+        ends_at: 'Eindigt voor'
+        locale: 'Landinstelling'
+        message: 'Mededeling'
+        level: 'Niveau'
+      booking:
+      bookyear:
+      contact:
+        name: 'Naam'
+        email: 'Email'
+        phone: 'Telefoon'
+        subject: 'Onderwerp'
+        message: 'Mededeling'
+      currency:
+      entry:
+      exchange_rate:
+      journal:
+      ledger:
+      period:
+      piece:
+      role:
+      unit:
+      user:
+    hints:
+      administration:
+      announcement:
+      booking:
+      bookyear:
+      contact:
+      currency:
+      entry:
+      exchange_rate:
+      journal:
+      ledger:
+      period:
+      piece:
+      role:
+      unit:
+      user:
+    placeholders:
+      administration:
+      announcement:
+        message: 'De mededeling die getoond wordt'
+        level: 'Het niveau'
+      booking:
+      bookyear:
+      contact:
+      currency:
+      entry:
+      exchange_rate:
+      journal:
+      ledger:
+      period:
+      piece:
+      role:
+      unit:
+      user:

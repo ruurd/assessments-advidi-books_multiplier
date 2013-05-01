@@ -1,0 +1,12 @@
+<%= render 'shared/show_header', name: Announcement.model_name.human %>
+<table class="table table-striped table-bordered table-condensed">
+	<%= render 'shared/show_thead' %>
+	<tbody>
+		<tr><td><%= t('.starts_at') %></td><td><%= @announcement.starts_at %></td></tr>
+		<tr><td><%= t('.ends_at') %></td><td><%= @announcement.ends_at %></td></tr>
+		<tr><td><%= t('.locale') %></td><td><%= @announcement.locale %></td></tr>
+		<tr><td><%= t('.message') %></td><td><%= @announcement.message %></td></tr>
+		<tr><td><%= t('.level') %></td><td><%= @announcement.level %></td></tr>
+	</tbody>
+</table>
+<%= link_to t(:'button.back_to_list'), announcements_path, class: "btn" %>

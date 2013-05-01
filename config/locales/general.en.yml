@@ -1,0 +1,32 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+en:
+  pecunia: 'Pecunia'
+  bureau_pels: 'Bureau Pels'
+  bureau_pels_street: 'Boogerd&nbsp;1'
+  bureau_pels_zipcode: '1791&nbsp;GW'
+  bureau_pels_place: 'Den&nbsp;Burg&nbsp;&mdash;&nbsp;Texel'
+  bureau_pels_phone: '+31612914545'
+  bureau_pels_info_at: 'info@bureaupels.nl'
+  button:
+    add: 'Add'
+    back_to_list: 'Back to list'
+    cancel: 'Cancel'
+    destroy: 'Destroy'
+    details: 'Details'
+    edit: 'Edit'
+    save: 'Save'
+    search: 'Search'
+    send: 'Send'
+    sendagain: 'Send again'
+    show: 'Show'
+  notice:
+    success_create: "%{object} was successfully created."
+    success_update: "%{object} was successfully updated."
+    success_delete: "%{object} was successfully deleted."
+    success_msgsent: 'Your message has been sent.'
+    success_msgsentagain: 'Your message has been sent again.'
+  text:
+    are_you_sure: 'Are you sure?'

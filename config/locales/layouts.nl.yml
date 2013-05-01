@@ -1,0 +1,28 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  layouts:
+    application:
+      administrationmenu:
+        bookyears: 'Boekjaren'
+        journals: 'Dagboeken'
+        ledgers: 'Grootboeken'
+        pieces: 'Boekstukken'
+        units: 'Eenheden'
+      adminmenu:
+        admin: 'Beheer'
+        announcements: 'Mededelingen'
+        contacts: 'Contactverzoeken'
+        administrations: 'Boekhoudingen'
+        users: 'Gebruikers'
+      all_rights_reserved: 'All rechten voorbehouden'
+      chooser:
+        select_administration: 'Selecteer boekhouding'
+      usermenu:
+        admin: 'Onderhoud'
+        sidekiq: 'Sidekiq'
+        about: 'Over'
+        feedback: 'Reactie'
+        logout: 'Uitloggen'

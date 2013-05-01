@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+	<form class="navbar-form pull-left" action="<%= select_administration_path %>" method="get" >
+		<input type="text" name="search"  class="span2" placeholder="<%= t('.select_administration') %>" value="<%= @current_administration %>">
+		<button type="submit" class="btn btn-primary"><%= t('.button.select') %></button>
+	</form>
+<% end %>

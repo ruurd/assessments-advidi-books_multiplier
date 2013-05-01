@@ -1,0 +1,15 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  shared:
+    new_header:
+      new: 'Nieuw'
+    edit_header:
+      edit: 'Wijzig'
+    show_header:
+      show: 'Toon'
+    show_thead:
+      item: 'Onderdeel'
+      value: 'Waarde'

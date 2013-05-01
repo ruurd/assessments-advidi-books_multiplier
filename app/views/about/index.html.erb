@@ -1,0 +1,15 @@
+<div class="page-header">
+	<h1><%= t '.about' %></h1>
+</div>
+<div>
+	<p><%= t '.onestopshop' %></p>
+
+	<address>
+		<strong><%= t :bureau_pels %></strong><br>
+		<%= raw(t(:bureau_pels_street)) %><br>
+		<%= raw(t(:bureau_pels_zipcode)) %>&nbsp;&nbsp;<%= raw(t(:bureau_pels_place)) %><br>
+		<br>
+		<abbr title="<%= t('.telephone') %>">T</abbr>:&nbsp;<%= t :bureau_pels_phone %><br>
+		<abbr title="<%= t('.email') %>">E</abbr>:&nbsp;<%= mail_to t(:bureau_pels_info_at), t(:bureau_pels_info_at), :subject => "#{t('.inforequest')} on #{l(Time.new, :format => "%Y-%m-%d %H:%M")}" %><br>
+	</address>
+</div>

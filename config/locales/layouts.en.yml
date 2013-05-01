@@ -1,0 +1,27 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+en:
+  layouts:
+    application:
+      administrationmenu:
+        bookyears: 'Bookyears'
+        journals: 'Journals'
+        ledgers: 'Ledgers'
+        pieces: 'Pieces'
+      adminmenu:
+        admin: 'Admin'
+        announcements: 'Announcements'
+        contacts: 'Contact requests'
+        administrations: 'Administrations'
+        users: 'Users'
+      all_rights_reserved: 'All rights reserved'
+      chooser:
+        select_administration: 'Select administration'
+      usermenu:
+        admin: 'Maintenance'
+        sidekiq: 'Sidekiq'
+        about: 'About'
+        feedback: 'Feedback'
+        logout: 'Logout'
