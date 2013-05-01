@@ -1,38 +1,63 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 source 'https://rubygems.org'
 
+# Regular RAILS stuff
 gem 'rails', '3.2.13'
+gem 'rails-i18n'
+gem 'rails_config'
+gem 'rails_admin'
+gem 'rails_admin-i18n'
+gem 'mysql2'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# Background stuff
+gem 'thin'
+gem 'mail'
 
-gem 'sqlite3'
+# Web UI stuff
+gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+gem 'simple_form'
 
+#group :assets do
+gem 'uglifier'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'coffee-rails'
+gem 'asset_sync'
+gem 'less-rails-bootstrap'
+#end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+group :development do
+	gem 'quiet_assets'
+	gem 'capistrano'
+	gem 'rvm-capistrano'
+	gem 'kwalify'
+	gem 'brakeman'
+	gem 'cane'
+	gem 'ruby-prof'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'meta_request', '0.2.1'
 end
 
-gem 'jquery-rails'
+group :test do
+	gem 'test-unit'
+end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :cucumber do
+	gem 'cucumber'
+	gem 'cucumber-rails'
+	gem 'database_cleaner'
+	gem 'factory_girl'
+	gem 'pickle'
+	gem 'launchy'
+	gem 'rspec-rails'
+	gem 'syntax'
+end
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
