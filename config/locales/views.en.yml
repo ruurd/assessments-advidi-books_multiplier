@@ -25,6 +25,15 @@ en:
       locale: 'Locale'
       message: 'Message'
       level: 'Level'
+  books:
+    index:
+      author: 'Author'
+      title: 'Title'
+      thumbnail: 'Thumbnail'
+    show:
+      author: 'Author'
+      title: 'Title'
+      thumbnail: 'Thumbnail'
   users:
     index:
       first_name: 'First name'

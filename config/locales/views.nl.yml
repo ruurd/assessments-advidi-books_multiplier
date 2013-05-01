@@ -24,6 +24,15 @@ nl:
       locale: 'Landinstelling'
       message: 'Mededeling'
       level: 'Niveau'
+  books:
+    index:
+      author: 'Auteur'
+      title: 'Titel'
+      thumbnail: 'Postzegelplaatje'
+    show:
+      author: 'Auteur'
+      title: 'Titel'
+      thumbnail: 'Postzegelplaatje'
   users:
     index:
       first_name: 'Voornaam'

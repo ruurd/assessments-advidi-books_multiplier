@@ -23,6 +23,7 @@ gem 'rails_admin'
 # Background stuff
 gem 'thin'
 gem 'mail'
+gem 'unicorn'
 
 # Web UI stuff
 gem 'jquery-rails'
