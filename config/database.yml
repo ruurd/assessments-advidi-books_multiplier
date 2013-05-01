@@ -4,8 +4,8 @@ development:
   encoding: utf8
   host: 127.0.0.1
   reconnect: false
-  username: osewzuclcwqaap
-  password: hpF-eYj2VQh3hsnpZCV03Gp-S5
+  username: books_multiplier
+  password: vRkbI7cekowOk3Lm
 
 test:
   database: books_multiplier_test
@@ -13,8 +13,8 @@ test:
   encoding: utf8
   host: 127.0.0.1
   reconnect: false
-  username: osewzuclcwqaap
-  password: hpF-eYj2VQh3hsnpZCV03Gp-S5
+  username: books_multiplier
+  password: vRkbI7cekowOk3Lm
 
 production:
   database: books_multiplier
@@ -22,5 +22,5 @@ production:
   encoding: utf8
   host: 127.0.0.1
   reconnect: false
-  username: osewzuclcwqaap
-  password: hpF-eYj2VQh3hsnpZCV03Gp-S5
+  username: books_multiplier
+  password: vRkbI7cekowOk3Lm

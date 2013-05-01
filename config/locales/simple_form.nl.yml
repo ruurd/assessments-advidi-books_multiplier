@@ -28,8 +28,27 @@ nl:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
   date:
-    month_names: ["Januari","Februari","Maart","April","Mei","Juni","Juli","Augustus","September","Oktober","November","December"]
-    abbr_day_names: ["Zo","Ma","Di","Wo","Do","Vr","Za"]
+    month_names:
+      - "Januari"
+      - "Februari"
+      - "Maart"
+      - "April"
+      - "Mei"
+      - "Juni"
+      - "Juli"
+      - "Augustus"
+      - "September"
+      - "Oktober"
+      - "November"
+      - "December"
+    abbr_day_names:
+      - "Zo"
+      - "Ma"
+      - "Di"
+      - "Wo"
+      - "Do"
+      - "Vr"
+      - "Za"
     formats: 
       long: "%B %e, %Y"
       short: "%e %b"
