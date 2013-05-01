@@ -5,74 +5,24 @@
 nl:
   simple_form:
     labels:
-      administration:
-        code: 'Code'
-        name: 'Naam'
-        street: 'Straat'
-        zipcode: 'Postcode'
-        place: 'PLaats'
-        latitude: 'Breedtegraad'
-        longitude: 'Lengtegraad'
-        phone: 'Telefoon'
-        fax: 'Fax'
-        registration: 'KVK-nummer'
-        vat_number: 'BTW-nummer'
-        country: 'Land'
       announcement:
         starts_at: 'Start op'
-        ends_at: 'Eindigt voor'
+        ends_before: 'Eindigt voor'
         locale: 'Landinstelling'
         message: 'Mededeling'
         level: 'Niveau'
-      booking:
-      bookyear:
-      contact:
-        name: 'Naam'
-        email: 'Email'
+      user:
+        email: 'E-mail'
+        first_name: 'Voornaam'
+        last_name: 'Achternaam'
+        gender: 'Geslacht'
         phone: 'Telefoon'
-        subject: 'Onderwerp'
-        message: 'Mededeling'
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:
+        mobile: 'Mobiel'
+        im: 'IM'
+        is_admin: 'Administrator'
     hints:
-      administration:
       announcement:
-      booking:
-      bookyear:
-      contact:
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:
     placeholders:
-      administration:
       announcement:
         message: 'De mededeling die getoond wordt'
         level: 'Het niveau'
-      booking:
-      bookyear:
-      contact:
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:

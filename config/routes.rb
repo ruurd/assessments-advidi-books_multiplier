@@ -16,14 +16,18 @@ BooksMultiplier::Application.routes.draw do
 		get "about", :to => 'about#index'
 		get "sysinfo", :to => 'sysinfo#index'
 
+		resources :announcements
 		resources :books do
 			collection do
-				get :load
+				get :load_all
 			end
 		end
+		resources :users
 	end
 
 	root :to => "welcome#index"
+
+	get "books/v1/volumes", :to => "books#load", :defaults => { :format => 'json' }
 
 	constraint = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin? }
 	constraints constraint do

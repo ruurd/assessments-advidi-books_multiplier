@@ -4,13 +4,12 @@
 			<a class="dropdown-toggle" id="usermenudd" role="button" data-toggle="dropdown" data-target="#" title="<%= "#{current_user.email}" %>" href="#"><%= "#{current_user.email}" %>
 				<b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="usermenudd">
-				<!-- li --><%#= link_to t('.admin'), rails_admin_path, target: '_blank' %><!-- /li -->
 				<li><%= link_to t('.about'), about_path %></li>
 				<li class="divider"></li>
 				<li><%= link_to t('.logout'), sign_out_path %></li>
 			</ul>
 		</li>
 	<% else %>
-		<li><%= link_to 'Login', new_user_session_path %></li>
+		<li><%= link_to t('.login'), new_user_session_path %></li>
 	<% end %>
 </ul>

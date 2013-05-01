@@ -35,8 +35,8 @@ module ApplicationHelper
 	end
 
 	# Return a checkmark character
-	def checkmark
-		"&#10004;"
+	def checkmark(yesplease)
+		yesplease ? "&#10004;"  : ''
 	end
 
 	def language_name(loc)

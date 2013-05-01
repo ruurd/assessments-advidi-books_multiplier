@@ -1,0 +1,33 @@
+{
+	"kind": "books#volumes",
+	"totalItems": <%= @count %>,
+	"items": [
+	<% @books.each do |book| %>
+		{
+			"kind": "books#volume",
+			"id": "<%= book.google_books_id %>",
+			"volumeInfo": {
+				<% if book.title %>
+				"title": "<%= book.title %>",
+				<% end %>
+				<% if book.author %>
+				"authors": [
+					"<%= book.author %>"
+				],
+				<% end %>
+				<% if book.isbn_13 %>
+				"industryIdentifiers": [
+					{
+						"type": "ISBN_13",
+						"identifier": "<%= book.isbn_13 %>"
+					}
+				],
+				<% end %>
+				<% if book.thumbnail %>
+				"previewLink": "<%= book.thumbnail %>",
+				<% end %>
+			}
+		}
+	<% end %>
+	]
+}

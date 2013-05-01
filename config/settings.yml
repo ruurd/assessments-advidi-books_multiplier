@@ -28,3 +28,11 @@ translations:
   application:
     - en
     - nl
+
+googlebooks:
+  protocol: 'https'
+  host: 'www.googleapis.com'
+  path: '/books/v1/volumes'
+  query: 'ruby+on+rails'
+  start_index: 0
+  max_results: 40

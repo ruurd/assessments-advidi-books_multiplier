@@ -1,25 +1,15 @@
-<div class="navbar">
-	<div class="navbar-inner">
-		<ul class="nav">
-			<li><p class="brand">Users</li>
-			<form method="get" class="navbar-search">
-				<input type="text" name="search" value="<%= params[:search] %>" class="input-medium search-query">
-				<button type="submit" class="btn-primary">Search</button>
-			</form>
-		</ul>
-	</div>
-</div>
-
+<%= render 'shared/index_header', name: User.model_name.human %>
 <table id="users" class="table table-striped table-bordered table-condensed">
 	<thead>
 	<tr>
 		<%= thsortable 'email' %>
-		<%= thsortable 'firstname', 'First name' %>
-		<%= thsortable 'lastname', 'Last name' %>
-		<th>Gender</th>
-		<%= thsortable 'phone' %>
-		<%= thsortable 'mobile' %>
-		<%= thsortable 'im' %>
+		<%= thsortable 'first_name', t('.first_name') %>
+		<%= thsortable 'last_name', t('.last_name') %>
+		<%= thsortable 'gender', t('.gender') %>
+		<%= thsortable 'phone', t('.phone') %>
+		<%= thsortable 'mobile', t('.mobile') %>
+		<%= thsortable 'im', t('.im') %>
+		<%= thsortable 'is_admin', t('.is_admin') %>
 
 		<th><i class="icon-flag"></i></th>
 	</tr>

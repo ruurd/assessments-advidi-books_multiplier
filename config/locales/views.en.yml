@@ -14,10 +14,35 @@ en:
     index:
       announcements: 'Announcements'
       starts_at: 'Starts at'
-      ends_at: 'Ends at'
+      ends_before: 'Ends before'
       locale: 'Locale'
       message: 'Message'
       level: 'Level'
+    show:
+      announcements: 'Announcements'
+      starts_at: 'Starts at'
+      ends_before: 'Ends before'
+      locale: 'Locale'
+      message: 'Message'
+      level: 'Level'
+  users:
+    index:
+      first_name: 'First name'
+      last_name: 'Last name'
+      full_name: 'Naam'
+      email: 'E-mail'
+      gender: 'Gender'
+      phone: 'Phone'
+      mobile: 'Mobile'
+      im: 'IM'
+    show:
+      first_name: 'First name'
+      last_name: 'Last name'
+      email: 'E-mail'
+      gender: 'Gender'
+      phone: 'Phone'
+      mobile: 'Mobile'
+      im: 'IM'
   welcome:
     index:
       about_book_multiplier: 'Books Multiplier is an assessment assignment for Advidi'

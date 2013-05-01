@@ -34,4 +34,18 @@ BooksMultiplier::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #compress assets
+  #config.assets.compress = false
+  #config.assets.js_compressor = :uglifier
+  #config.assets.css_compressor = :yui
+
+  #config.assets.compile = true
+  #config.assets.digest = false
+
+  #config.assets.precompile = %w(index.js admin_index.js index.css admin_index.css)
+  #config.assets.precompile = ['*.js', '*.css', '*.gif', '*.png', '*.jpg', '*.jpeg']
+  config.assets.precompile += %w(application.css application.js)
+  config.assets.precompile += %w(rails_admin/rails_admin.css rails_admin/rails_admin.js)
+
 end

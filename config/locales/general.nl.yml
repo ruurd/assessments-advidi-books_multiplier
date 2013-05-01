@@ -26,7 +26,5 @@ nl:
     success_create: "%{object} is met succes aangemaakt."
     success_update: "%{object} is met succes bijgewerkt."
     success_delete: "%{object} is met succes verwijderd."
-    success_msgsent: 'Uw boodschap is verstuurt.'
-    success_msgsentagain: 'Uw boodschap is nogmaals verstuurt'
   text:
     are_you_sure: 'Weet u het zeker?'

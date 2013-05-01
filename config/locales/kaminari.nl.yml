@@ -1,0 +1,21 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) DiningCity B.V.  All Rights Reserved.
+#============================================================================
+nl:
+  views:
+    pagination:
+      first: "&laquo; Eerste"
+      last: "Laatste &raquo;"
+      previous: "&lsaquo; Vorige"
+      next: "Volgende &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name} niet gevonden"
+          one: "Afbeelden van <b>1</b> %{entry_name}"
+          other: "Afbeelden van <b>alle %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Afbeelden van %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> van <b>%{total}</b> in totaal"

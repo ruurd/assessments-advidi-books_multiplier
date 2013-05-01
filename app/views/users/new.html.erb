@@ -1,8 +1,2 @@
-<div class="navbar">
-	<div class="navbar-inner">
-		<ul class="nav">
-			<li><p class="brand"><%= t('.new_user') %></li>
-		</ul>
-	</div>
-</div>
+<%= render 'shared/new_header', name: User.model_name.human %>
 <%= render 'form' %>

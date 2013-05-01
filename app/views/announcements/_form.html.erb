@@ -1,7 +1,7 @@
 <%= simple_form_for(@announcement) do |f| %>
 	<fieldset>
 		<%= f.input :starts_at %>
-		<%= f.input :ends_at %>
+		<%= f.input :ends_before %>
 		<%= f.input :locale %>
 		<%= f.input :message, input_html: {class: "span12"} %>
 		<%= f.input :level, :as => :select, :include_blank => "Select level...", :collection => ['success', 'info', 'warning', 'error'], :input_html => {:class => "span4"} %>

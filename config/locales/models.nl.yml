@@ -5,9 +5,5 @@
 nl:
   activerecord:
     models:
-      administration: 'Boekhouding'
-      bookyear: 'Boekjaar'
-      journal: 'Dagboek'
-      ledger: 'Grootboek'
-      piece: 'Boekstuk'
-      unit: 'Eenheid'
+      announcement: 'Mededeling'
+      user: 'Gebruiker'

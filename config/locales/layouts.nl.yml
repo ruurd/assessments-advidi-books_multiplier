@@ -5,24 +5,18 @@
 nl:
   layouts:
     application:
-      administrationmenu:
-        bookyears: 'Boekjaren'
-        journals: 'Dagboeken'
-        ledgers: 'Grootboeken'
-        pieces: 'Boekstukken'
-        units: 'Eenheden'
       adminmenu:
-        admin: 'Beheer'
+        adminmenu: 'Beheer'
         announcements: 'Mededelingen'
-        contacts: 'Contactverzoeken'
-        administrations: 'Boekhoudingen'
         users: 'Gebruikers'
       all_rights_reserved: 'All rechten voorbehouden'
-      chooser:
-        select_administration: 'Selecteer boekhouding'
+      mainmenu:
+        books_ruby_on_rails: 'Boeken over Ruby on RAILS'
+        load_books: 'Haal boeken op'
+        mainmenu: 'Hoofdmenu'
       usermenu:
         admin: 'Onderhoud'
         sidekiq: 'Sidekiq'
         about: 'Over'
-        feedback: 'Reactie'
         logout: 'Uitloggen'
+        login: 'Inloggen'

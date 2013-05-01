@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501124740) do
+ActiveRecord::Schema.define(:version => 20130501201004) do
 
   create_table "announcements", :force => true do |t|
     t.string   "locale",      :limit => 2,  :default => "en",   :null => false
@@ -24,14 +24,14 @@ ActiveRecord::Schema.define(:version => 20130501124740) do
   end
 
   create_table "books", :force => true do |t|
-    t.string "google_book_id", :limit => 30,  :null => false
-    t.string "isbn_13",        :limit => 30
-    t.string "author",         :limit => 200
-    t.string "title",          :limit => 200
-    t.string "thumbnail",      :limit => 200
+    t.string "google_books_id", :limit => 30,  :null => false
+    t.string "isbn_13",         :limit => 30
+    t.string "author",          :limit => 200
+    t.string "title",           :limit => 200
+    t.string "thumbnail",       :limit => 200
   end
 
-  add_index "books", ["google_book_id"], :name => "books_google_book_id_uq", :unique => true
+  add_index "books", ["google_books_id"], :name => "books_google_books_id_uq", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 50
@@ -40,8 +40,9 @@ ActiveRecord::Schema.define(:version => 20130501124740) do
     t.string   "phone",                  :limit => 15
     t.string   "mobile",                 :limit => 15
     t.string   "im",                     :limit => 50
-    t.string   "email",                                :default => "", :null => false
-    t.string   "encrypted_password",                   :default => "", :null => false
+    t.boolean  "is_admin",                             :default => false, :null => false
+    t.string   "email",                                :default => "",    :null => false
+    t.string   "encrypted_password",                   :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

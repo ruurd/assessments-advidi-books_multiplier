@@ -7,6 +7,13 @@
 # Announcement
 #
 class Announcement < ActiveRecord::Base
+
+	attr_accessible :starts_at,
+	                :ends_before,
+	                :locale,
+	                :message,
+	                :level
+
 	validates_inclusion_of :level, :in => %w(success info warning error), :message => "%{value} must be success, info, warning or error"
 
 	scope :current, where('starts_at <= now() AND now() < ends_before')

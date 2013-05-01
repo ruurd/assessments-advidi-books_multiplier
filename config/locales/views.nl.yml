@@ -17,6 +17,33 @@ nl:
       locale: 'Landinstelling'
       message: 'Mededeling'
       level: 'Niveau'
+    show:
+      announcements: 'Aankondigingen'
+      starts_at: 'Start op'
+      ends_before: 'Eindigt voor'
+      locale: 'Landinstelling'
+      message: 'Mededeling'
+      level: 'Niveau'
+  users:
+    index:
+      first_name: 'Voornaam'
+      last_name: 'Achternaam'
+      email: 'E-mail'
+      gender: 'Geslacht'
+      phone: 'Telefoon'
+      mobile: 'Mobiel'
+      im: 'IM'
+      is_admin: 'Beheerder'
+    show:
+      first_name: 'Voornaam'
+      last_name: 'Achternaam'
+      full_name: 'Naam'
+      email: 'E-mail'
+      gender: 'Geslacht'
+      phone: 'Telefoon'
+      mobile: 'Mobiel'
+      im: 'IM'
+      is_admin: 'Beheerder'
   welcome:
     index:
       about_book_multiplier: 'Books Multiplier is een assessment opdracht van Advidi'

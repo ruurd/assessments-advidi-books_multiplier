@@ -3,7 +3,7 @@
 	<thead>
 	<tr>
 		<%= thsortable 'starts_at', t('.starts_at') %>
-		<%= thsortable 'ends_at', t('.ends_at') %>
+		<%= thsortable 'ends_before', t('.ends_before') %>
 		<%= thsortable 'locale', t('.locale') %>
 		<%= thsortable 'message', t('.message') %>
 		<%= thsortable 'level', t('.level') %>
@@ -15,9 +15,13 @@
 		<tr>
 			<%= render 'row', :announcement => announcement %>
 			<td>
+				<span>
 				<%= link_to t(:'button.show'), announcement_path(announcement), :class => "btn btn-mini" %>
 				<%= link_to t(:'button.edit'), edit_announcement_path(announcement), :class => "btn btn-mini" %>
+				</span>
+				<span class="pull-right">
 				<%= link_to t(:'button.destroy'), announcement, :class => "btn btn-danger btn-mini", confirm: 'Are you sure?', method: :delete %>
+				</span>
 			</td>
 		</tr>
 	<% end %>

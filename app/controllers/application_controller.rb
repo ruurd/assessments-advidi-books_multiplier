@@ -6,37 +6,32 @@
 #----------------------------------------------------------------------------
 # Application controller base class
 #
-# TODO: document this class
-#
 class ApplicationController < ActionController::Base
 	before_filter :authenticate_user!, :except => [:welcome, :contact, :about]
 	before_filter :set_locale
 	protect_from_forgery
 
+	# Set default url options
 	def default_url_options(options={})
 		options.merge({:locale => I18n.locale, :protocol => Settings.protocol})
 	end
 
+	# Fetch the last rememebered waypoint in a screenflow
 	def waypoint
 		session[:waypoint] || root_path
 	end
 
+	# Remember the referer as waypoint so we can return to it later
 	def set_waypoint
 		session[:waypoint] = request.referer
 	end
 
-	def lasttab(namespace)
-		session["tab_#{namespace}"]
-	end
-
-	def set_lasttab(namespace, last_tab)
-		session["tab_#{namespace}"] = last_tab
-		lasttab("tab_#{namespace}")
-	end
-
+	# Change the locale of the application. Pick apart the request, then substitute
+	# the locale in the request en redirect to the new version
 	def change_locale
 		if Settings.translations.application.include?(params[:new_locale])
 			I18n.locale = params[:new_locale]
+			session[:locale] = I18n.locale
 			if request.referrer
 				uri = request.referer.dup
 				route = Rails.application.routes.recognize_path(uri)
@@ -48,6 +43,7 @@ class ApplicationController < ActionController::Base
 		end
 	end
 
+	# Remember locale in session. Determine from path or session or TLD or the default locale
 	def set_locale
 		I18n.locale = params[:locale] || session[:locale] || locale_from_tld || I18n.default_locale
 		session[:locale] = I18n.locale

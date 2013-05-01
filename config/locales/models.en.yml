@@ -5,9 +5,5 @@
 en:
   activerecord:
     models:
-      administration: 'Administration'
-      bookyear: 'Bookyear'
-      journal: 'Journal'
-      ledger: 'Ledger'
-      piece: 'Piece'
-      unit: 'Unit'
+      announcement: 'Announcement'
+      user: 'User'

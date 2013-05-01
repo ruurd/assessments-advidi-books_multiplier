@@ -1,0 +1,17 @@
+<ul class="nav pull-right">
+	<li class="dropdown">
+		<a class="dropdown-toggle"
+		   id="adminmenudd"
+		   role="button"
+		   data-toggle="dropdown"
+		   data-target="#"
+		   title="<%= t('.adminmenu') %>"
+		   href="#"><%= t('.adminmenu') %><b class="caret"></b></a>
+		<ul class="dropdown-menu"
+			role="menu"
+			aria-labelledby="adminmenudd">
+			<li><%= link_to t('.announcements'), announcements_path %></li>
+			<li><%= link_to t('.users'), users_path %></li>
+		</ul>
+	</li>
+</ul>

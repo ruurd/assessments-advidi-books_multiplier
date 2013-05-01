@@ -5,74 +5,24 @@
 en:
   simple_form:
     labels:
-      administration:
-        code: 'Code'
-        name: 'Name'
-        street: 'Street'
-        zipcode: 'Zipcode'
-        place: 'Place'
-        latitude: 'Latitude'
-        longitude: 'Longitude'
-        phone: 'Telephone'
-        fax: 'Fax'
-        registration: 'CoC-number'
-        vat_number: 'VAT-number'
-        country: 'Country'
       announcement:
         starts_at: 'Starts at'
-        ends_at: 'Ends at'
+        ends_before: 'Ends before'
         locale: 'Locale'
         message: 'Message'
         level: 'Level'
-      booking:
-      bookyear:
-      contacts:
-        name: 'Name'
+      user:
         email: 'E-mail'
+        firstname: 'First name'
+        lastname: 'Last name'
+        gender: 'Gender'
         phone: 'Phone'
-        subject: 'Subject'
-        message: 'Message'
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:
+        mobile: 'Mobile'
+        im: 'IM'
+        is_admin: 'Administrator'
     hints:
-      administration:
       announcement:
-      booking:
-      bookyear:
-      contact:
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:
     placeholders:
-      administration:
       announcement:
         message: 'The message you want to show'
         level: 'The level'
-      booking:
-      bookyear:
-      contact:
-      currency:
-      entry:
-      exchange_rate:
-      journal:
-      ledger:
-      period:
-      piece:
-      role:
-      unit:
-      user:

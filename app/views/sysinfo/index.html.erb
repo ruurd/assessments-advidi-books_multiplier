@@ -1,13 +1,13 @@
-<h1>Pecunia runtime information</h1>
+<h1><%= t(:books_multiplier) %> runtime information</h1>
 
 <pre>
 commit-id: <%= @git_version %>
-	it is now: <%= Time.current %>
-	timezone: <%= Time.zone %>
+it is now: <%= Time.current %>
+ timezone: <%= Time.zone %>
 </pre>
 <h2>Version</h2>
-<pre>commit-id: <%= @git_version %></pre>
-<pre>ruby version: <%= RUBY_VERSION %></pre>
+<pre>    commit-id: <%= @git_version %></pre>
+<pre> ruby version: <%= RUBY_VERSION %></pre>
 <pre>rails version: <%= Rails.version %></pre>
 
 <h2>Session</h2>

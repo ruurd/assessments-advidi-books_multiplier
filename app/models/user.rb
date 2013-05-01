@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
 					:phone,
 					:mobile,
 					:im,
+					:is_admin,
 					:email,
 					:password,
 					:password_confirmation,
@@ -28,18 +29,22 @@ class User < ActiveRecord::Base
 
 	validates :email, :uniqueness => true
 
+	# Use full name as stringform
 	def to_s
 		"#{first_name} #{last_name}"
 	end
 
+	# Is this user an admin (STUB)
 	def admin?
 		true
 	end
 
+	# Send welcome message
 	def welcome
 		WelcomeMailSender.perform_async(id)
 	end
 
+	# Search in the person table
 	def self.search(search)
 		if search
 			where('email LIKE :srch', srch: "%#{search}%")
