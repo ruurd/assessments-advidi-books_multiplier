@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%=  t(:pecunia) %></title>
+	<title><%=  t(:books_multiplier) %></title>
 	<%= stylesheet_link_tag :application %>
 	<%= javascript_include_tag :application %>
 	<%= favicon_link_tag() %>
@@ -17,14 +17,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<%= link_to t(:pecunia), root_path, :class => "brand" %>
+			<%= link_to t(:books_multiplier), root_path, :class => "brand" %>
 			<div class="nav-collapse">
-				<%= render 'layouts/application/chooser' %>
-				<%= render 'layouts/application/administrationmenu' %>
+				<%= render 'layouts/application/mainmenu' %>
 				<%# pull-right tabs you must add in reverse order %>
 				<%= render 'layouts/application/languagemenu' %>
 				<%= render 'layouts/application/usermenu' %>
-				<%= render 'layouts/application/adminmenu' %>
 			</div>
 		</div>
 	</div>

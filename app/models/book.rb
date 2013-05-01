@@ -6,11 +6,12 @@
 #-----------------------------------------------------------------------------
 # Announcement
 #
-class Announcement < ActiveRecord::Base
-	validates_inclusion_of :level, :in => %w(success info warning error), :message => "%{value} must be success, info, warning or error"
+class Book < ActiveRecord::Base
 
-	scope :current, where('starts_at <= now() AND now() < ends_before')
-	scope :local, where("locale = ?", I18n.locale)
+	def to_s
+		title
+	end
+
 
 	def self.search(search)
 		if search
@@ -19,5 +20,4 @@ class Announcement < ActiveRecord::Base
 			scoped
 		end
 	end
-
 end

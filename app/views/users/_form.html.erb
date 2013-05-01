@@ -1,0 +1,16 @@
+<%= simple_form_for(@user) do |f| %>
+	<fieldset>
+		<%= f.input :email, :as => :email, :input_html => {:class => "span12"} %>
+		<%#= f.association :role, :include_blank => false, :collection => Role.all %>
+		<%= f.input :first_name, :as => :string, :input_html => {:class => "span12"} %>
+		<%= f.input :last_name, :as => :string, :input_html => {:class => "span12"} %>
+		<%= f.input :gender, :collection => ['m', 'f'], :include_blank => false %>
+		<%= f.input :phone %>
+		<%= f.input :mobile %>
+		<%= f.input :im %>
+		<div class="form-actions">
+			<%= f.button :submit, :class => "btn-primary", :value => t('button.save') %>
+			<%= link_to t('button.cancel'), :back, :class => "btn" %>
+		</div>
+	</fieldset>
+<% end %>

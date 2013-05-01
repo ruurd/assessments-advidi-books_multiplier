@@ -6,7 +6,7 @@ en:
   about:
     index:
       about: 'About'
-      onestopshop: 'Pecunia is a simple online bookkeeping system!'
+      about_book_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
       telephone: 'Telephone'
       email: 'Email'
       inforequest: 'Request for information'
@@ -18,54 +18,7 @@ en:
       locale: 'Locale'
       message: 'Message'
       level: 'Level'
-  bookyears:
-    index:
-      year: 'Year'
-      start: 'Start'
-      finish: 'Finish'
-      description: 'Description'
-  contacts:
-    newmessage:
-      use_of_form: 'Please use this contact form to send us of your questions and requests.'
-      name: 'Name'
-      email: 'E-mail'
-      phone: 'Phone number'
-      subject: 'Subject'
-      message: 'Message'
-    thankyou:
-      thankyou: 'Thank you!'
-      content: 'The content of your contact form has been sent! We will contact you as soon as possible.'
-      homepage: 'Home page'
-  contacts_mailer:
-    contact_request: 'Contact request'
-    item: 'Item'
-    value: 'Value'
-    from: 'From'
-    email: 'EMail'
-    phone: 'Phone'
-    message: 'Message'
-    warning: 'Please do not respond to this message. Replies will be discarded without being read.'
-    regards: 'Regards, the Pecunia team.'
-  journals:
-    index:
-      code: 'Code'
-      name: 'Name'
-      description: 'Description'
-  ledgers:
-    index:
-      code: 'Code'
-      name: 'Name'
-      description: 'Description'
-  pieces:
-    index:
-      code: 'Code'
-      description: 'Description'
-  units:
-    index:
-      code: 'Code'
-      unitname: 'Unit name'
-      description: 'Description'
   welcome:
     index:
-      onestopshop: 'Pecunia is your one stop shop for bookkeeping!'
+      about_book_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
       announcements: 'Announcements'

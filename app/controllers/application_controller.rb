@@ -9,6 +9,7 @@
 # TODO: document this class
 #
 class ApplicationController < ActionController::Base
+	before_filter :authenticate_user!, :except => [:welcome, :contact, :about]
 	before_filter :set_locale
 	protect_from_forgery
 

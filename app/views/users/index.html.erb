@@ -1,0 +1,49 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<ul class="nav">
+			<li><p class="brand">Users</li>
+			<form method="get" class="navbar-search">
+				<input type="text" name="search" value="<%= params[:search] %>" class="input-medium search-query">
+				<button type="submit" class="btn-primary">Search</button>
+			</form>
+		</ul>
+	</div>
+</div>
+
+<table id="users" class="table table-striped table-bordered table-condensed">
+	<thead>
+	<tr>
+		<%= thsortable 'email' %>
+		<%= thsortable 'firstname', 'First name' %>
+		<%= thsortable 'lastname', 'Last name' %>
+		<th>Gender</th>
+		<%= thsortable 'phone' %>
+		<%= thsortable 'mobile' %>
+		<%= thsortable 'im' %>
+
+		<th><i class="icon-flag"></i></th>
+	</tr>
+	</thead>
+	<tbody>
+	<% @users.each do |user| %>
+		<tr>
+			<%= render 'row', :user => user %>
+			<td>
+				<span>
+					<%#= link_to 'Invite', invite_user_path(user), class: 'btn btn-mini' %>
+					<%= link_to 'Show', user_path(user), :class => "btn btn-mini" %>
+					<%= link_to 'Edit', edit_user_path(user), :class => "btn btn-mini" %>
+				</span>
+				<span class="pull-right">
+					<%= link_to 'Delete', user_path(user), :class => "btn btn-mini btn-danger flush_right", :method => :delete, :confirm => "Are you sure?" %>
+				</span>
+			</td>
+		</tr>
+		</a>
+	<% end %>
+	</tbody>
+</table>
+
+<%=  link_to 'Add', new_user_path, class: 'btn btn-primary' %>
+
+<%= paginate @users %>

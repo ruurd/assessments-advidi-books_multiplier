@@ -6,11 +6,18 @@ source 'https://rubygems.org'
 
 # Regular RAILS stuff
 gem 'rails', '3.2.13'
+gem 'rake'
 gem 'rails-i18n'
 gem 'rails_config'
+gem 'mysql2'
+
+# Rails admin stuff
 gem 'rails_admin'
 gem 'rails_admin-i18n'
-gem 'mysql2'
+gem 'devise'
+gem 'devise-async'
+gem 'cancan'
+gem 'rails_admin'
 
 # Background stuff
 gem 'thin'

@@ -5,20 +5,14 @@
 en:
   layouts:
     application:
-      administrationmenu:
-        bookyears: 'Bookyears'
-        journals: 'Journals'
-        ledgers: 'Ledgers'
-        pieces: 'Pieces'
       adminmenu:
         admin: 'Admin'
         announcements: 'Announcements'
-        contacts: 'Contact requests'
-        administrations: 'Administrations'
         users: 'Users'
       all_rights_reserved: 'All rights reserved'
-      chooser:
-        select_administration: 'Select administration'
+      mainmenu:
+        books_ruby_on_rails: 'Books about Ruby on RAILS'
+        mainmenu: 'Main Menu'
       usermenu:
         admin: 'Maintenance'
         sidekiq: 'Sidekiq'

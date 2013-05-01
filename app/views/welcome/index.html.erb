@@ -1,0 +1,21 @@
+<div class="page-header">
+	<h1><%= t(:'book_multiplier') %></h1>
+	<%= t '.about_book_multiplier' %>
+</div>
+
+<% if user_signed_in? %>
+	<% unless @announcements.empty? %>
+		<div class="container-fluid well">
+			<p class="lead"><%=  t('.announcements') %></p>
+			<div class="row-fluid">
+				<div class="span12">
+					<% @announcements.each do |announcement| %>
+						<div class="alert alert-<%= announcement.level %>">
+							<%= content_tag :div, announcement.message, :id => "flash_#{announcement.level}" %>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+<% end %>

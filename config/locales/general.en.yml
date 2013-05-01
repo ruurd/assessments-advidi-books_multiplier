@@ -3,7 +3,7 @@
 # Copyright (c) Bureau Pels.  All Rights Reserved.
 #============================================================================
 en:
-  pecunia: 'Pecunia'
+  book_multiplier: 'Google Books Multiplier'
   bureau_pels: 'Bureau Pels'
   bureau_pels_street: 'Boogerd&nbsp;1'
   bureau_pels_zipcode: '1791&nbsp;GW'
@@ -26,7 +26,5 @@ en:
     success_create: "%{object} was successfully created."
     success_update: "%{object} was successfully updated."
     success_delete: "%{object} was successfully deleted."
-    success_msgsent: 'Your message has been sent.'
-    success_msgsentagain: 'Your message has been sent again.'
   text:
     are_you_sure: 'Are you sure?'

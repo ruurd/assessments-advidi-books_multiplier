@@ -1,0 +1,62 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+nl:
+  errors:
+    messages:
+      expired: 'is verlopen, vraag een nieuwe aan'
+      not_found: 'niet gevonden'
+      already_confirmed: 'reeds bevestigd, probeer in te loggen'
+      not_locked: 'was niet op slot'
+      not_saved:
+        one: '1 fout voorkwam dat %{resource} is opgeslagen:'
+        other: '%{count} fouten voorkwamen dat %{resource} is opgeslagen:'
+  devise:
+    failure:
+      already_authenticated: 'U bent al ingelogd.'
+      unauthenticated: 'Om door te gaan dient u in te loggen.'
+      unconfirmed: 'U dient uw account te bevestigen.'
+      locked: 'Uw account is op slot.'
+      invalid: 'Ongeldig email-adres of wachtwoord.'
+      invalid_token: 'Ongeldig authenticatie token.'
+      timeout: 'Uw sessie is verlopen. Log opnieuw in.'
+      inactive: 'Uw account is nog niet geactiveerd.'
+    sessions:
+      signed_out: 'Met succes uitgelogd.'
+      user:
+        signed_in: 'Met succes ingelogd.'
+      admin:
+        signed_in: 'Met succes als administrator ingelogd.'
+    passwords:
+      send_instructions: 'U ontvangt over en paar minuten een email met instructies hoe u uw wachtwoord kunt herstellen.'
+      updated: 'Uw wachtwoord is met succes gewijzigd. U bent nu ingelogd.'
+      updated_not_active: 'Uw wachtwoord is met succes gewijzigd.'
+      send_paranoid_instructions: 'Als u email-adres in onze gegevens aanwezig is ontvangt u een email met een link waarmee u uw wachtwoord kunt herstellen.'
+      no_token: 'U heeft alleen toegang tot deze pagina als u op deze pagina terecht komt met de link uit de email waarmee u uw wachtwoord kunt herstellen. Als u geknipt en geplakt heeft vergewis u ervan dat u de volledige URL heeft gebruikt.'
+    confirmations:
+      send_instructions: 'U ontvangt over en paar minuten een email met instructies hoe u uw account kunt bevestigen.'
+      send_paranoid_instructions: 'Als u email-adres in onze gegevens aanwezig is ontvangt u een email met een link waarmee u uw account kunt bevestigen.'
+      confirmed: 'Uw account is met succes bevestigd. U bent nu ingelogd.'
+    registrations:
+      signed_up: 'Welkom! U bent met succes ingeschreven.'
+      signed_up_but_unconfirmed: 'Er is een email aan u gestuurd met een bevestigingslink. Gebruik deze link om uw account te bevestigen.'
+      signed_up_but_inactive: 'U bent met succes ingeschreven maar u kunt pas inloggen nadat u uw account heeft bevestigd.'
+      signed_up_but_locked: 'U bent met succes ingeschreven maar u kunt niet inlogen omdat uw account op slot zit.'
+      updated: 'Uw account is met succes bijgewerkt'
+      update_needs_confirmation: 'U heeft uw account met succes bijgewerkt maar het is noodzakelijk om uw email-adres te verifi&euml;ren. Controleer uw email en gebruik de bevestigingslink om het verifi&euml;ren te voltooien.'
+      destroyed: 'Tot ziens. Uw account is met succes afgesloten.'
+    unlocks:
+      send_instructions: 'U ontvangt zometeen een email met instructies hoe u uw account kunt vrijgeven.'
+      unlocked: 'UW account is met succes vrijgegevens. Log in om door te gaan.'
+      send_paranoid_instructions: 'Als uw account bestaat ontvangt u zometeen een emailbericht met instructies.'
+    omniauth_callbacks:
+      success: 'Successvol geauthenticeerd van %{kind} account.'
+      failure: 'Kan u niet authenticeren van %{kind}. Reden: "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Bevestigingsinstructies'
+      reset_password_instructions:
+        subject: 'Instructies om uw wachtwoord te herstellen'
+      unlock_instructions:
+        subject: 'Instructies om uw account vrij te laten geven'

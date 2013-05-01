@@ -1,16 +1,11 @@
 <ul class="nav pull-right">
 	<% if user_signed_in? %>
 		<li class="dropdown">
-			<a class="dropdown-toggle" id="usermenudd" role="button" data-toggle="dropdown" data-target="#" title="<%= "#{current_user.email}" %>" href="#"><%= "#{current_user}" %>
+			<a class="dropdown-toggle" id="usermenudd" role="button" data-toggle="dropdown" data-target="#" title="<%= "#{current_user.email}" %>" href="#"><%= "#{current_user.email}" %>
 				<b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="usermenudd">
-				<% if current_user.admin? %>
-					<li><%= link_to t('.admin'), rails_admin_path, target: '_blank' %></li>
-					<li><%= link_to t('.sidekiq'), sidekiq_web_path, target: '_blank' %></li>
-					<li class="divider"></li>
-				<% end %>
+				<!-- li --><%#= link_to t('.admin'), rails_admin_path, target: '_blank' %><!-- /li -->
 				<li><%= link_to t('.about'), about_path %></li>
-				<li><%= link_to t('.feedback'), contact_request_path %></li>
 				<li class="divider"></li>
 				<li><%= link_to t('.logout'), sign_out_path %></li>
 			</ul>

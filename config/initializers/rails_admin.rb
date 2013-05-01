@@ -47,9 +47,7 @@ RailsAdmin.config do |config|
 	# Add models here if you want to go 'whitelist mode':
 	# config.included_models = [Admin, Ckeditor::Asset, Ckeditor::AttachmentFile, Ckeditor::Picture, Locale, Reservation, Restaurant, RestaurantLocale, RestaurantMenu, User]
 	config.included_models = [
-		Administration,
 		Announcement,
-		Contact,
 	    User
 	]
 
