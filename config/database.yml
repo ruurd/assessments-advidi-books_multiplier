@@ -1,6 +1,6 @@
 development:
   database: books_multiplier_dev
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   host: 127.0.0.1
   reconnect: false
@@ -9,7 +9,7 @@ development:
 
 test:
   database: books_multiplier_test
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   host: 127.0.0.1
   reconnect: false
@@ -18,7 +18,7 @@ test:
 
 production:
   database: books_multiplier
-  adapter: pg
+  adapter: postgresql
   encoding: utf8
   host: 127.0.0.1
   reconnect: false

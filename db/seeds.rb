@@ -7,4 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create(email: 'rfpels@gmail.com', first_name: 'Ruurd', last_name: 'Pels', gender: 'm'. phone: '+31222315034', mobile: '+31612914545', is_admin: 1)
+rfp = User.create(email: 'rfpels@gmail.com', first_name: 'Ruurd', last_name: 'Pels', gender: 'm', phone: '+31222315034', mobile: '+31612914545', is_admin: 1)
+rfp.save
+

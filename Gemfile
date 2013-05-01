@@ -9,7 +9,8 @@ gem 'rails', '3.2.13'
 gem 'rake'
 gem 'rails-i18n'
 gem 'rails_config'
-gem 'mysql2'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
 
 # Rails admin stuff
 gem 'rails_admin'
