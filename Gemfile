@@ -25,6 +25,7 @@ gem 'rails_admin'
 gem 'thin'
 gem 'mail'
 gem 'unicorn'
+gem 'newrelic_rpm'
 
 # Web UI stuff
 gem 'jquery-rails'
