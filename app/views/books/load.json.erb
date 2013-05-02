@@ -23,8 +23,15 @@
 					}
 				],
 				<% end %>
+
 				<% if book.thumbnail %>
-				"previewLink": "<%= book.thumbnail %>",
+				"imageLinks": {
+					"thumbnail": "<%= book.thumbnail %>"
+				},
+				<% end %>
+
+				<% if book.preview %>
+				"previewLink": "<%= book.preview %>",
 				<% end %>
 			}
 		}

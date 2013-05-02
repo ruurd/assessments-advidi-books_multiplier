@@ -26,7 +26,7 @@ class BooksController < ApplicationController
 	def load
 		query = params["q"]
 		startIndex = params[:startIndex] ? params[:startIndex].to_i : 0
-		maxResults = params[:maxResults] ? params[:startIndex].to_i : 10
+		maxResults = params[:maxResults] ? params[:maxResults].to_i : 10
 		@count = Book.all.count
 		@books = Book.offset(startIndex).limit(maxResults)
 	end

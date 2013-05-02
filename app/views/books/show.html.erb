@@ -4,7 +4,8 @@
 	<tbody>
 	<tr><td><%= t('.author') %></td><td><%= @book.author %></td></tr>
 	<tr><td><%= t('.title') %></td><td><%= @book.title %></td></tr>
-	<tr><td><%= t('.thumbnail') %></td><td><%= @book.thumbnail %></td></tr>
+	<tr><td><%= t('.preview') %></td><td><a class="btn btn-mini" href="<%= @book.preview %>" target="_blank">Preview</a></td></tr>
+	<tr><td><%= t('.thumbnail') %></td><td><img src="<%= @book.thumbnail %>"/></td></tr>
 	</tbody>
 </table>
 <%= link_to t(:'button.back_to_list'), books_path, class: "btn" %>

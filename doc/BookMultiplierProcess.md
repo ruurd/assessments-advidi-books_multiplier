@@ -32,3 +32,7 @@ Aargh. That needed some brew hacking. MmmOkay lets d=just write that off as the 
 
 I never worked with Heroku. Interesting system. After some ado I managed to make it run (especially setting up de database was a challenge). In a later stage I added delayed_jobs to fork off loading the books from Google in a separate job due to runlenght of that job.
 
+### Settings ###
+
+The pieces of the URL to use shen loading books are stored in config/settings.yml. If you want to have some fun you could instantiate another books-multiplier with settings adapted in such a way that it points to another books-multiplier. If that instance has books in the database it should give you a minimalistic version of the JSON you receive from Google. Have fun.
+
