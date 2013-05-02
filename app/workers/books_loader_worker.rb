@@ -54,6 +54,8 @@ class BooksLoaderWorker
 				book = Book.new
 				book.google_books_id = item['id']
 			end
+
+			book.isbn_13 = nil
 			idents = item['volumeInfo']['industryIdentifiers']
 			if idents && idents.size > 0
 				idents.each do |type, identifier|
@@ -62,12 +64,27 @@ class BooksLoaderWorker
 					end
 				end
 			end
+
+			book.author = nil
 			authors = item['volumeInfo']['authors']
 			if authors and authors.size > 0
 				book.author = authors[0]
 			end
+
 			book.title = item['volumeInfo']['title']
-			book.thumbnail = item['volumeInfo']['previewLink']
+
+			book.thumbnail = nil
+			imagelinks = item['volumeInfo']['imageLinks']
+			if imagelinks and imagelinks.size > 0
+				imagelinks.each do |type, link|
+					if type == 'thumbnail'
+						book.thumbnail = link
+					end
+				end
+			end
+
+			book.preview = item['volumeInfo']['previewLink']
+
 			book.save
 
 			Delayed::Worker.logger.add(Logger::INFO, "Saving book #{book}")

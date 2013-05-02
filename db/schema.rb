@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130502063218) do
+ActiveRecord::Schema.define(:version => 20130502083524) do
 
   create_table "announcements", :force => true do |t|
     t.string   "locale",      :limit => 2,  :default => "en",   :null => false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130502063218) do
     t.string "author",          :limit => 200
     t.string "title",           :limit => 200
     t.string "thumbnail",       :limit => 200
+    t.string "preview",         :limit => 200
   end
 
   add_index "books", ["google_books_id"], :name => "books_google_books_id_uq", :unique => true

@@ -8,11 +8,11 @@ nl:
       adminmenu:
         adminmenu: 'Beheer'
         announcements: 'Mededelingen'
+        load_books: 'Haal boeken op'
         users: 'Gebruikers'
       all_rights_reserved: 'All rechten voorbehouden'
       mainmenu:
         books_ruby_on_rails: 'Boeken over Ruby on RAILS'
-        load_books: 'Haal boeken op'
         mainmenu: 'Hoofdmenu'
       usermenu:
         admin: 'Onderhoud'
