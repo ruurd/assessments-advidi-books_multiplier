@@ -17,7 +17,6 @@ class BooksLoaderWorker
 
 			done = false
 			while not done
-				Delayed::Worker.logger.add(Logger::INFO, "Loading #{query} from #{startIndex} for #{maxResults} books")
 				parsed_json = GoogleBooksApiClient.load_page(query, startIndex, maxResults)
 				if parsed_json
 					items = parsed_json['items']
@@ -32,12 +31,11 @@ class BooksLoaderWorker
 						done = true
 					end
 				else
-					Delayed::Worker.logger.add(Logger::INFO, "No parsed JSON from Google alas, exiting")
 					done = true
 				end
 			end
 		rescue Exception => e
-			Delayed::Worker.logger.add(Logger::ERROR, e.message)
+			puts e.message
 		end
 	end
 	handle_asynchronously :load_all_job
@@ -86,8 +84,6 @@ class BooksLoaderWorker
 			book.preview = item['volumeInfo']['previewLink']
 
 			book.save
-
-			Delayed::Worker.logger.add(Logger::INFO, "Saving book #{book}")
 		end
 	end
 
