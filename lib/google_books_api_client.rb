@@ -1,7 +1,19 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+
+#----------------------------------------------------------------------------
+# A client that interrogates the Books API
+#
 module GoogleBooksApiClient
 
+	# load max_query results from google starting at start_index
+	# @param query query to run
+	# @param start_index get results starting at
+	# @param max_results this much results if available
+	# @result a piece of decoded JSON
 	def self.load_page(query, start_index, max_results)
-
 		proto = Settings.googlebooks.protocol
 		host = Settings.googlebooks.host
 		path = Settings.googlebooks.path
@@ -16,7 +28,5 @@ module GoogleBooksApiClient
 
 		jsoncontent = open(url).read
 		ActiveSupport::JSON.decode(jsoncontent)
-	rescue
-		nil
 	end
 end

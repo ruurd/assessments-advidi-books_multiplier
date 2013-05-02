@@ -11,6 +11,7 @@ gem 'rails-i18n'
 gem 'rails_config'
 gem 'pg'
 gem 'activerecord-postgresql-adapter'
+gem 'delayed_job_active_record'
 
 # Rails admin stuff
 gem 'rails_admin'

@@ -20,6 +20,7 @@ BooksMultiplier::Application.routes.draw do
 		resources :books do
 			collection do
 				get :load_all
+				get :come_back_later
 			end
 		end
 		resources :users

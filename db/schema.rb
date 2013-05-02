@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501201004) do
+ActiveRecord::Schema.define(:version => 20130502063218) do
 
   create_table "announcements", :force => true do |t|
     t.string   "locale",      :limit => 2,  :default => "en",   :null => false
@@ -32,6 +32,22 @@ ActiveRecord::Schema.define(:version => 20130501201004) do
   end
 
   add_index "books", ["google_books_id"], :name => "books_google_books_id_uq", :unique => true
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 50
