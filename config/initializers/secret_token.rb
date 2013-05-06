@@ -1,3 +1,7 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 # Be sure to restart your server when you modify this file.
 
 # Your secret key for verifying the integrity of signed cookies.

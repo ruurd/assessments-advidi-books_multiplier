@@ -1,3 +1,7 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'

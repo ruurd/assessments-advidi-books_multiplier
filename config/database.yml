@@ -1,3 +1,7 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 development:
   database: books_multiplier_dev
   adapter: postgresql

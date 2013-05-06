@@ -1,3 +1,7 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 #
 # This file configures the New Relic Agent.  New Relic monitors
 # Ruby, Java, .NET, PHP, and Python applications with deep visibility and low overhead.

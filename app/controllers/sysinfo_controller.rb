@@ -7,13 +7,13 @@
 # System info controller.
 #
 class SysinfoController < ApplicationController
-	before_filter :authenticate_user!
-	def index
-		begin
-			@git_version = ::File.read('./REVISION').chomp
-		rescue Errno::ENOENT
-		ensure
-			@git_version ||= "Unknown (REVISION file is missing)"
-		end
-	end
+  before_filter :authenticate_admin!
+
+  def index
+    begin
+      @git_version = ::File.read('./REVISION').chomp
+    ensure
+      @git_version ||= 'Unknown (REVISION file is missing)'
+    end
+  end
 end

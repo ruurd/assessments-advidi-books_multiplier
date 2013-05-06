@@ -1,3 +1,7 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
 # Load the rails application
 require File.expand_path('../application', __FILE__)
 

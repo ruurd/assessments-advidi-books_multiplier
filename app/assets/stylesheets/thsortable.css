@@ -3,16 +3,16 @@
  *=========================================================================*/
 
 th .current {
-	padding-right: 12px;
-	background-repeat: no-repeat;
-	background-position: right center;
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 th .asc {
-	background-image: url('assets/sort_asc.png');
+    background-image: url('assets/sort_asc.png');
 }
 
 th .desc {
-	background-image: url('assets/sort_desc.jpg');
+    background-image: url('assets/sort_desc.jpg');
 }
 

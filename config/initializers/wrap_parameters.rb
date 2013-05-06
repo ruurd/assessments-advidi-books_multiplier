@@ -1,3 +1,8 @@
+# encoding: UTF-8
+#============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+#============================================================================
+
 # Be sure to restart your server when you modify this file.
 #
 # This file contains settings for ActionController::ParamsWrapper which

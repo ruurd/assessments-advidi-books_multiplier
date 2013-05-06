@@ -7,7 +7,7 @@
 # Handle welcome page, display announcements if any
 #
 class WelcomeController < ApplicationController
-	def index
-		@announcements = Announcement.current.local
-	end
+  def index
+    @announcements = Announcement.current.local
+  end
 end

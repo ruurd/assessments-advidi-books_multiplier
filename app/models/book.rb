@@ -8,17 +8,17 @@
 #
 class Book < ActiveRecord::Base
 
-	# Use the title for a stringified book
-	def to_s
-		title
-	end
+  # Use the title for a stringified book
+  def to_s
+    title
+  end
 
-	# Search in the database
-	def self.search(search)
-		if search
-			where('author LIKE :srch OR title LIKE :srch', srch: "%#{search}%")
-		else
-			scoped
-		end
-	end
+  # Search in the database
+  def self.search(search)
+    if search
+      where('author LIKE :srch OR title LIKE :srch', srch: "%#{search}%")
+    else
+      scoped
+    end
+  end
 end
