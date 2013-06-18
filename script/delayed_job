@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
-
+# encoding: UTF-8
+# ============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+# ============================================================================
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'config', 'environment'))
 require 'delayed/command'
 Delayed::Command.new(ARGV).daemonize

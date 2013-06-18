@@ -1,4 +1,8 @@
-ENV["RAILS_ENV"] = 'test'
+# encoding: UTF-8
+# ============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+# ============================================================================
+ENV['RAILS_ENV'] = 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 

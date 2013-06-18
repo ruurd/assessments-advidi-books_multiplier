@@ -1,9 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # (c) 2013 Bureau Pels. All Rights Reserved
-#============================================================================
-
-#-----------------------------------------------------------------------------
+# ===========================================================================
 # Handle Book list
 #
 class BooksController < ApplicationController
@@ -27,7 +25,7 @@ class BooksController < ApplicationController
 
   # Load the list of books from the database
   def load
-    #query = params["q"]
+    # query = params["q"]
     start_index = params['startIndex'] ? params['startIndex'].to_i : 0
     max_results = params['maxResults'] ? params['maxResults'].to_i : 10
     @count = Book.all.count
@@ -41,6 +39,7 @@ class BooksController < ApplicationController
   end
 
   private
+
   def sort_column
     Book.column_names.include?(params[:sort]) ? params[:sort] : 'id'
   end

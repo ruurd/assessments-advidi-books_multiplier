@@ -1,43 +1,38 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # Copyright (c) Bureau Pels.  All Rights Reserved.
-#============================================================================
-require 'open-uri'
-
-#----------------------------------------------------------------------------
+# ===========================================================================
 # Worker that loads books from Google and puts them in the database
 #
+require 'open-uri'
+
 class BooksLoaderWorker
   # Load all books you can find about ruby on rails
   def load_all_job
-    begin
-      query = Settings.googlebooks.query
-      start_index = Settings.googlebooks.start_index.to_i
-      max_results = Settings.googlebooks.max_results.to_i
+    query = Settings.googlebooks.query
+    start_index = Settings.googlebooks.start_index.to_i
+    max_results = Settings.googlebooks.max_results.to_i
 
-      done = false
-      until done
-        parsed_json = GoogleBooksApiClient.load_page(query,
-                                                     start_index,
-                                                     max_results)
-        if parsed_json
-          items = parsed_json['items']
-          if items && items.size > 0
-            convert_json_to_books(parsed_json)
-            if items.size < max_results
-              done = true
-            else
-              start_index += max_results
-            end
-          else
+    done = false
+    until done
+      parsed_json = GoogleBooksApiClient.load_page(query,
+                                                   start_index,
+                                                   max_results)
+      if parsed_json
+        items = parsed_json['items']
+        if items && items.size > 0
+          convert_json_to_books(parsed_json)
+          if items.size < max_results
             done = true
+          else
+            start_index += max_results
           end
         else
           done = true
         end
+      else
+        done = true
       end
-    rescue Exception => e
-      puts e.message
     end
   end
 
@@ -66,7 +61,7 @@ class BooksLoaderWorker
 
       book.author = nil
       authors = item['volumeInfo']['authors']
-      book.author = authors[0] if authors and authors.size > 0
+      book.author = authors[0] if authors && authors.size > 0
 
       book.title = item['volumeInfo']['title']
 

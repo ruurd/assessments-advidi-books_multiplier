@@ -1,0 +1,25 @@
+# encoding: UTF-8
+# ----------------------------------------------------------------------------
+AllCops:
+#  Includes: []
+  Excludes:
+    - 'db/schema.rb'
+    - 'script/rails'
+#----------------------------------------------------------------------------
+# Check line length but allow reasonable length
+Encoding:
+  Enabled: true
+#----------------------------------------------------------------------------
+# Check line length but allow reasonable length
+LineLength:
+  Enabled: true
+  Max: 129
+#----------------------------------------------------------------------------
+# Avoid methods longer than 30 lines of code
+MethodLength:
+  Enabled: true
+  CountComments: false
+  Max: 30
+
+BlockNesting:
+  Max: 5

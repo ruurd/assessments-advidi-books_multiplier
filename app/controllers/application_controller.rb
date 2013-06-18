@@ -1,9 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # (c) 2013 Bureau Pels. All Rights Reserved
-#============================================================================
-
-#----------------------------------------------------------------------------
+# ===========================================================================
 # Application controller base class
 #
 class ApplicationController < ActionController::Base
@@ -11,8 +9,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   # Set default url options
-  def default_url_options(options={})
-    options.merge({locale: I18n.locale, protocol: Settings.protocol})
+  def default_url_options(options = {})
+    options.merge({ locale: I18n.locale, protocol: Settings.protocol })
   end
 
   # Fetch the last rememebered waypoint in a screenflow
@@ -30,8 +28,7 @@ class ApplicationController < ActionController::Base
   # new version
   def change_locale
     if Settings.translations.application.include?(params[:new_locale])
-      I18n.locale = params[:new_locale]
-      session[:locale] = I18n.locale
+      session[:locale] = I18n.locale = params[:new_locale]
       if request.referrer
         uri = request.referer.dup
         route = Rails.application.routes.recognize_path(uri)
@@ -54,6 +51,7 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
   def locale_from_tld
     parsed_locale = request.host.split('.').last
     Settings.translations.application.include?(parsed_locale.to_sym) ? parsed_locale : nil

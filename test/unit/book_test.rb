@@ -1,3 +1,8 @@
+# encoding: UTF-8
+# ============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+# ============================================================================
+#
 require 'test/unit'
 
 class BookTest < Test::Unit::TestCase

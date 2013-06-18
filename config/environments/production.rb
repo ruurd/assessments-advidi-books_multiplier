@@ -1,3 +1,8 @@
+# encoding: UTF-8
+# ============================================================================
+# Copyright (c) Bureau Pels.  All Rights Reserved.
+# ============================================================================
+#
 BooksMultiplier::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 

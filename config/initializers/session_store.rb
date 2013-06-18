@@ -1,7 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # Copyright (c) Bureau Pels.  All Rights Reserved.
-#============================================================================
+# ===========================================================================
 # Be sure to restart your server when you modify this file.
 
 BooksMultiplier::Application.config.session_store :cookie_store, key: '_BooksMultiplier_session'

@@ -1,9 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # (c) 2013 Bureau Pels. All Rights Reserved
-#============================================================================
-
-#-----------------------------------------------------------------------------
+# ===========================================================================
 # Announcement
 #
 class Book < ActiveRecord::Base
@@ -13,7 +11,8 @@ class Book < ActiveRecord::Base
                   :title,
                   :thumbnail,
                   :preview
-                                                                                                                                                                                            # Use the title for a stringified book
+
+  # Use the title for a stringified book
   def to_s
     title
   end

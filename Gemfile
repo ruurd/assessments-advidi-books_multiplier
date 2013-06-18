@@ -47,6 +47,10 @@ group :development do
 	gem 'better_errors'
 	gem 'binding_of_caller'
 	gem 'meta_request', '0.2.1'
+  gem 'guard'
+  gem 'guard-test'
+  gem 'guard-rubocop'
+  gem 'terminal-notifier-guard'
 end
 
 group :test do

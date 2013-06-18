@@ -1,9 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # (c) 2013 Bureau Pels. All Rights Reserved
-#============================================================================
-
-#----------------------------------------------------------------------------
+# ===========================================================================
 # Application controller
 #
 module ApplicationHelper
@@ -52,12 +50,12 @@ module ApplicationHelper
     css_class = nil
     css_class = "current #{sort_direction}" if column == sort_column
     if column == sort_column && sort_direction == 'asc'
-      direction =  'desc'
+      direction = 'desc'
     else
       direction = 'asc'
     end
     content_tag(:th, class: css_class) do
-      link_to title, {sort: column, direction: direction}
+      link_to title, { sort: column, direction: direction }
     end
   end
 
@@ -75,8 +73,8 @@ module ApplicationHelper
       direction = 'asc'
     end
     link_to title,
-            {tab: tab, sort: column, direction: direction},
-            {class: css_class}
+            { tab: tab, sort: column, direction: direction },
+            { class: css_class }
   end
 end
 

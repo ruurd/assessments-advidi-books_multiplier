@@ -1,7 +1,7 @@
 # encoding: UTF-8
-#============================================================================
+# ===========================================================================
 # Copyright (c) Bureau Pels.  All Rights Reserved.
-#============================================================================
+# ===========================================================================
 
 class CreateBooks < ActiveRecord::Migration
   def change
@@ -13,6 +13,6 @@ class CreateBooks < ActiveRecord::Migration
       t.string :thumbnail, limit: 200, null: true, default: nil
     end
 
-    add_index :books, :google_books_id, {name: 'books_google_books_id_uq', unique: true}
+    add_index :books, :google_books_id, { name: 'books_google_books_id_uq', unique: true }
   end
 end
