@@ -1,0 +1,40 @@
+!!!
+%html
+  %head
+    %title=  t(:books_multiplier)
+    = stylesheet_link_tag :application
+    = javascript_include_tag :application
+    = favicon_link_tag()
+    = csrf_meta_tag
+  %body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container-fluid
+          %a.btn.btn-navbar{'data-toggle' => "collapse", 'data-parent' => "#nav-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            = link_to t(:books_multiplier), root_path, :class => "brand"
+            .nav-collapse
+              = render 'layouts/application/mainmenu'
+              = render 'layouts/application/languagemenu'
+              = render 'layouts/application/adminmenu'
+  .container-fluid
+    .row-fluid
+      %span.span12
+        - flash.each do |level, msg|
+          %div{class: "alert alert-#{flash_class(level)}"}
+            %a.close{'data-dismiss' => "alert"}
+              &times;
+            = content_tag :div, msg, :id => "flash_#{level}" if msg.is_a?(String)
+        = yield
+    .row-fluid
+      %span.span12
+        %hr
+          %footer>
+            %p
+              &copy;
+              = Time.now.year
+              Bureau Pels.
+              = t('.all_rights_reserved') + '.'
+

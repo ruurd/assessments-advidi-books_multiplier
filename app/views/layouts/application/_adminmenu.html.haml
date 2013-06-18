@@ -1,0 +1,8 @@
+%ul.nav.pull-right
+  %li.dropdown
+    %a.dropdown-toggle#adminmenudd{role: "button", 'data-toggle' => "dropdown", 'data-target' => '#', title: t('.adminmenu'), href: '#'}
+      = t('.adminmenu')
+      %b.caret
+    %ul.dropdown-menu{role: "menu", 'aria-labelledby' => "adminmenudd"}
+      %li= link_to t('.about'), about_path
+      %li= link_to t('.load_books'), load_all_books_path

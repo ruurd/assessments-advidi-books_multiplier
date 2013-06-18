@@ -7,8 +7,13 @@
 # Announcement
 #
 class Book < ActiveRecord::Base
-
-  # Use the title for a stringified book
+  attr_accessible :google_books_id,
+                  :isbn_13,
+                  :author,
+                  :title,
+                  :thumbnail,
+                  :preview
+                                                                                                                                                                                            # Use the title for a stringified book
   def to_s
     title
   end

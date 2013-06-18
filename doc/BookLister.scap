@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="6DFC8A49-35E0-437E-91FF-B3C2E553065C">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="369.71875,295.085938" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>10-14</ConnectedNoteIDs>
+            <PointsToNoteIDs>10</PointsToNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="367.0,425.0" Width="84.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <TextColor>1.0 0.0 0.0</TextColor>
+                <Border Weight="1" Style="Cloud">0.756763 0.785592 0.373258</Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Google Books</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="414.819802,194.139095" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>13</ConnectedNoteIDs>
+            <PointsToNoteIDs>13</PointsToNoteIDs>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="315.058845,189.616717" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="229.933845,191.585467" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>11</ConnectedNoteIDs>
+            <PointsToNoteIDs>11</PointsToNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="519.948708,194.881282" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>14-17</ConnectedNoteIDs>
+            <PointsToNoteIDs>14</PointsToNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="459.61951,80.214046" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>15</ConnectedNoteIDs>
+            <PointsToNoteIDs>15</PointsToNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="526.928103,81.440608" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+            <PointsToNoteIDs>16</PointsToNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="598.205447,80.440608" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>BookLister</String>
+            <ConnectedNoteIDs>17</ConnectedNoteIDs>
+            <PointsToNoteIDs>17</PointsToNoteIDs>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="385.96875,341.421875" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>0-1</ConnectedNoteIDs>
+            <PointsToNoteIDs>1</PointsToNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="247.664062,248.453125" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>0, 4</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="332.789062,245.453125" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>0, 3</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="427.88231,242.37573" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="527.499489,237.059564" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>0, 5</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="474.077614,124.287532" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>5, 7</ConnectedNoteIDs>
+            <PointsToNoteIDs>5</PointsToNoteIDs>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="540.710427,123.99847" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>5, 8</ConnectedNoteIDs>
+            <PointsToNoteIDs>5</PointsToNoteIDs>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="611.464406,124.02972" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>cache</String>
+            <ConnectedNoteIDs>5, 9</ConnectedNoteIDs>
+            <PointsToNoteIDs>5</PointsToNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <NoteStyles>
+        <Style Name="Title Text" ID="DE36C221-00ED-4E71-8192-3A36EB58A7AD" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="A2447696-49E7-4595-A4A8-8CF567BB4D62" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="B5215AD8-BD61-4C01-9BC7-0FD9B6825804" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Yellow Bubble" ID="0D826B11-A97A-4F30-BD1F-D82695DEE676" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="D3191CC9-D2FE-4E0D-81AA-3D55E8096378" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882327 0.80198</FillColor>
+        </Style>
+        <Style Name="Blue Bubble" ID="58C05F2D-BC6E-41D4-8473-7276071C1A08" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="84E636B7-BD1D-4371-9246-21DB897912DF" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>1.0 1.0 1.0</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

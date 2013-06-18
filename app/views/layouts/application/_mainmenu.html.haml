@@ -1,0 +1,7 @@
+%ul.nav
+  %li.dropdown
+    %a.dropdown_toggle#mainmenudd{role: "button", 'data-toggle' => "dropdown", 'data-target' => "#", title: t('.mainmenu'), href: "#"}
+      = t('.mainmenu')
+      %b.caret
+    %ul.dropdown-menu{role: "menu", :'aria-labelledby' => "mainmenudd"}
+      %li= link_to t('.books_ruby_on_rails'), books_path

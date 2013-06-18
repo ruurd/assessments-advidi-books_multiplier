@@ -13,14 +13,6 @@ gem 'pg'
 gem 'activerecord-postgresql-adapter'
 gem 'delayed_job_active_record'
 
-# Rails admin stuff
-gem 'rails_admin'
-gem 'rails_admin-i18n'
-gem 'devise'
-gem 'devise-async'
-gem 'cancan'
-gem 'rails_admin'
-
 # Background stuff
 gem 'thin'
 gem 'mail'
@@ -44,6 +36,7 @@ gem 'less-rails-bootstrap'
 #end
 
 group :development do
+  gem 'haml'
 	gem 'quiet_assets'
 	gem 'capistrano'
 	gem 'rvm-capistrano'

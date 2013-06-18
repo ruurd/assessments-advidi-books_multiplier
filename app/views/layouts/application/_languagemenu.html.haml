@@ -1,0 +1,8 @@
+%ul.nav.pull-right
+  %li.dropdown
+    %a.dropdown_toggle#languagemenudd{role: "button", 'data-toggle' => "dropdown", 'data-target' => "#", alt: t("languages.#{I18n.locale}"), href: "#"}
+      = image_tag(image_path("flags/#{I18n.locale}.gif"))
+    %ul.dropdown-menu{role: "menu", 'aria-labelledby' => "languagemenudd"}
+      - Settings.translations.application.each do |translation|
+        %li
+          = link_to raw("#{image_tag(image_path("flags/#{translation}.gif"))} #{language_name(translation)}"), change_locale_path(:new_locale => translation)

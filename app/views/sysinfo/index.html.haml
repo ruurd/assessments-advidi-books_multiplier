@@ -1,0 +1,9 @@
+%h1
+  = t(:books_multiplier)
+  runtime information
+%pre>
+  commit-id: "#{@git_version}"
+  it is now: "#{Time.current}"
+  timezone: "#{Time.zone}"
+  ruby version: "#{RUBY_VERSION}"
+  rails version: "#{Rails.version}"

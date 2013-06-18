@@ -7,8 +7,6 @@
 # System info controller.
 #
 class SysinfoController < ApplicationController
-  before_filter :authenticate_admin!
-
   def index
     begin
       @git_version = ::File.read('./REVISION').chomp

@@ -1,0 +1,26 @@
+= render 'shared/show_header', name: Book.model_name.human
+%table.table.table-striped.table-bordered.table-condensed
+  = render 'shared/show_thead'
+  %tbody
+    %tr
+      %td
+        = t('.author')
+      %td
+        = @book.author
+    %tr
+      %td
+        = t('.title')
+      %td
+        = @book.title
+    %tr
+      %td
+        = t('.preview')
+      %td
+        %a.btn.btn-mini{href: "#{@book.preview}", target: "_blank"}
+          Preview
+    %tr
+      %td
+        = t('.thumbnail')
+      %td
+        %img{src: "#{@book.thumbnail}"}
+= link_to t(:'button.back_to_list'), books_path, class: "btn"

@@ -8,6 +8,5 @@
 #
 class WelcomeController < ApplicationController
   def index
-    @announcements = Announcement.current.local
   end
 end

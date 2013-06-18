@@ -13,16 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130502083524) do
 
-  create_table "announcements", :force => true do |t|
-    t.string   "locale",      :limit => 2,  :default => "en",   :null => false
-    t.string   "level",       :limit => 10, :default => "info", :null => false
-    t.datetime "starts_at"
-    t.datetime "ends_before"
-    t.text     "message"
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
-  end
-
   create_table "books", :force => true do |t|
     t.string "google_books_id", :limit => 30,  :null => false
     t.string "isbn_13",         :limit => 30

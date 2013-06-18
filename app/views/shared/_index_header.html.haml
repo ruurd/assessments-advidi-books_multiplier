@@ -1,0 +1,10 @@
+.navbar
+  .navbar-inner
+    %ul.nav
+      %li
+        %p.brand
+          = name.capitalize
+      %form.navbar-search{method: "get"}
+        %input.input-medium.search-query{type: "text", name: "search", value: "#{params[:search]}"}
+        %button.btn-primary{type: "submit"}
+          = t('button.search')

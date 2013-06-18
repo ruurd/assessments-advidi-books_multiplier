@@ -1,0 +1,25 @@
+= render 'shared/index_header', name: Book.model_name.human
+%table.table.table-condensed.table-bordered
+  %thead>
+    %tr>
+      = thsortable 'author', t('.author')
+      = thsortable 'title', t('.title')
+      %th
+        = t('.thumbnail')
+      %th
+        %i.icon-flag
+    %tbody
+      - @books.each do |book|
+        %tr
+          = render 'row', :book => book
+          %td
+            = link_to t(:'button.show'), book_path(book), :class => "btn btn-mini"
+= paginate(@books)
+:javascript
+  $('a[rel=popover]').popover({
+    html: true,
+    trigger: 'hover',
+    content: function () {
+      return '<img src="'+$(this).data('img') + '" />';
+    }
+  });

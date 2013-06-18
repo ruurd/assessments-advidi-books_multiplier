@@ -6,7 +6,7 @@ en:
   about:
     index:
       about: 'About'
-      about_book_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
+      about_books_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
       telephone: 'Telephone'
       email: 'Email'
       inforequest: 'Request for information'
@@ -54,5 +54,5 @@ en:
       im: 'IM'
   welcome:
     index:
-      about_book_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
-      announcements: 'Announcements'
+      books_multiplier: 'Books Multiplier'
+      about_books_multiplier: 'Books Multiplier is an assessment assignment for Advidi'
