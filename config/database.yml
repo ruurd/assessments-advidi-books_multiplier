@@ -2,29 +2,28 @@
 #============================================================================
 # Copyright (c) Bureau Pels.  All Rights Reserved.
 #============================================================================
-development:
-  database: books_multiplier_dev
+postgresql: &postgresql
   adapter: postgresql
   encoding: utf8
-  host: 127.0.0.1
   reconnect: false
-  username: books_multiplier
-  password: vRkbI7cekowOk3Lm
+  min_messages: ERROR
+  username: <%= ENV['TRAVIS'] == 'true' ? postgres : books_multiplier %>
+  password: <%= vRkbI7cekowOk3Lm unless ENV['TRAVIS'] == 'true' %>
+
+defaults: &defaults
+  pool: 5
+  timeout: 5000
+  host: 127.0.0.1
+  <<: *postgres
+
+development:
+  database: books_multiplier_dev
+  <<: *defaults
 
 test:
   database: books_multiplier_test
-  adapter: postgresql
-  encoding: utf8
-  host: 127.0.0.1
-  reconnect: false
-  username: books_multiplier
-  password: vRkbI7cekowOk3Lm
+  <<: *defaults
 
 production:
   database: books_multiplier
-  adapter: postgresql
-  encoding: utf8
-  host: 127.0.0.1
-  reconnect: false
-  username: books_multiplier
-  password: vRkbI7cekowOk3Lm
+  <<: *defaults
