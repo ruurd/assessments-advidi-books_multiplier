@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/[ruurd]/[books_multiplier].png)](https://travis-ci.org/[ruurd]/[books_multiplier])
 == Welcome to books_multiplier
 
 - clone this repo
