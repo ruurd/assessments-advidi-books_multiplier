@@ -31,3 +31,9 @@ guard :rubocop do
   watch(%r{.+\.rb$})
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
+
+guard 'rails', port:3003, server: :thin do
+  watch('Gemfile.lock')
+  watch(%r{^(config|lib)/.*})
+end
+

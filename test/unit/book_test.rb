@@ -3,27 +3,23 @@
 # Copyright (c) Bureau Pels.  All Rights Reserved.
 # ============================================================================
 #
-require 'test/unit'
+require 'test_helper'
 
-class BookTest < Test::Unit::TestCase
+class BookTest < ActiveSupport::TestCase
 
-  # Called before every test method runs. Can be used
-  # to set up fixture information.
-  def setup
-    # Do nothing
-  end
+  context 'A book' do
+    setup do
+      @book = FactoryGirl.create(:book,
+                                 google_books_id: '123212321',
+                                 isbn_13: '1234567890123',
+                                 author: 'W. Riter',
+                                 title: 'One fine book this is!',
+                                 thumbnail: nil,
+                                 preview: nil)
+    end
 
-  # Called after every test method runs. Can be used to tear
-  # down fixture information.
-
-  def teardown
-    # Do nothing
-  end
-
-  # Fake test
-  def test_fail
-
-    # To change this template use File | Settings | File Templates.
-    fail('Not implemented')
+    should 'be valid' do
+      assert @book
+    end
   end
 end

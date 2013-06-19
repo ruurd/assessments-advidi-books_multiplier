@@ -36,36 +36,44 @@ gem 'less-rails-bootstrap'
 #end
 
 group :development do
+  gem 'quiet_assets'
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+  gem 'kwalify'
+  gem 'brakeman'
+  gem 'cane'
+  gem 'ruby-prof'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request', '0.2.1'
+end
+
+group :test, :development do
   gem 'haml'
-	gem 'quiet_assets'
-	gem 'capistrano'
-	gem 'rvm-capistrano'
-	gem 'kwalify'
-	gem 'brakeman'
-	gem 'cane'
-	gem 'ruby-prof'
-	gem 'better_errors'
-	gem 'binding_of_caller'
-	gem 'meta_request', '0.2.1'
   gem 'guard'
+  gem 'guard-rails'
   gem 'guard-test'
   gem 'guard-rubocop'
   gem 'terminal-notifier-guard'
 end
 
 group :test do
-	gem 'test-unit'
+  gem 'minitest-reporters'
+  gem 'factory_girl'
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'rake'
 end
 
 group :cucumber do
-	#gem 'cucumber'
-	#gem 'cucumber-rails'
-	gem 'database_cleaner'
-	gem 'factory_girl'
-	gem 'pickle'
-	gem 'launchy'
-	gem 'rspec-rails'
-	gem 'syntax'
+  #gem 'cucumber'
+  #gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'pickle'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem 'syntax'
 end
 
 
