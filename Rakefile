@@ -5,3 +5,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 BooksMultiplier::Application.load_tasks
+
+task test: :rubocop
+
+task :rubocop do
+  sh 'rubocop'
+end
+
