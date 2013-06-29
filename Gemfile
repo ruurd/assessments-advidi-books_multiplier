@@ -4,6 +4,8 @@
 #============================================================================
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 # Regular RAILS stuff
 gem 'rails', '3.2.13'
 gem 'rake'
@@ -33,6 +35,7 @@ gem 'less-rails'
 gem 'coffee-rails'
 gem 'asset_sync'
 gem 'less-rails-bootstrap'
+gem 'therubyrhino'
 #end
 
 group :development do
