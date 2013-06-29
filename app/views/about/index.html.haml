@@ -11,8 +11,11 @@
     = raw(t(:bureau_pels_place))
     %br
     %br
-    %abbr title => =t('.telephone')
-    T:&nbsp;
-    =t :bureau_pels_phone
+    %abbr{title: t('.telephone')}
+      T:&nbsp;
+      =t :bureau_pels_phone
     %br
-    %abbr title="<%= t('.email') %>">E</abbr>:&nbsp;<%= mail_to t(:bureau_pels_info_at), t(:bureau_pels_info_at), :subject => "#{t('.inforequest')} on #{l(Time.new, :format => "%Y-%m-%d %H:%M")}" %><br>
+    %abbr{title: t('.email')}
+      E:&nbsp;
+      = mail_to t(:bureau_pels_info_at), t(:bureau_pels_info_at), :subject => "#{t('.inforequest')} on #{l(Time.new, :format => "%Y-%m-%d %H:%M")}"
+
