@@ -22,6 +22,7 @@ gem 'unicorn'
 gem 'newrelic_rpm'
 
 # Web UI stuff
+gem 'haml'
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 gem 'kaminari'
