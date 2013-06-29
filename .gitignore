@@ -9,6 +9,9 @@
 # Ignore bundler config
 /.bundle
 
+# Ignore asset sync
+/config/initializers/asset_sync.rb
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
