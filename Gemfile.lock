@@ -297,6 +297,9 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
+    therubyrhino (2.0.2)
+      therubyrhino_jar (>= 1.7.3)
+    therubyrhino_jar (1.7.4)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -368,6 +371,7 @@ DEPENDENCIES
   syntax
   terminal-notifier-guard
   therubyracer
+  therubyrhino
   thin
   twitter-bootstrap-rails
   uglifier
