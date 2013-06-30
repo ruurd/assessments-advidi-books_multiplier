@@ -25,6 +25,9 @@ BooksMultiplier::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Asset host
+  config.action_controller.asset_host = "//s3.amazonaws.com/#{ENV['FOG_DIRECTORY']}"
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 

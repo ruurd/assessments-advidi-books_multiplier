@@ -1,10 +1,10 @@
 # encoding: UTF-8
 # ----------------------------------------------------------------------------
 AssetSync.configure do |config|
-  config.fog_provider = 'AWS'
   config.aws_access_key_id = ENV['AWSKEY']
   config.aws_secret_access_key = ENV['AWSSECRET']
-  config.fog_directory = 'books-multiplier'
+  config.fog_provider = ENV['FOG_PROVIDER']
+  config.fog_directory = ENV['FOG_DIRECTORY']
   #
   # Increase upload performance by configuring your region
   # config.fog_region = 'eu-west-1'
