@@ -361,7 +361,6 @@ DEPENDENCIES
   rails (= 3.2.13)
   rails-i18n
   rails_config
-  rake
   rspec-rails
   ruby-prof
   rvm-capistrano

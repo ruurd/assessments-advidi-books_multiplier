@@ -8,7 +8,6 @@ ruby '1.9.3'
 
 # Regular RAILS stuff
 gem 'rails', '3.2.13'
-gem 'rake'
 gem 'rails-i18n'
 gem 'rails_config'
 gem 'pg'
@@ -53,7 +52,6 @@ group :development do
 end
 
 group :test, :development do
-  gem 'haml'
   gem 'guard'
   gem 'guard-rails'
   gem 'guard-test'
@@ -66,7 +64,6 @@ group :test do
   gem 'factory_girl'
   gem 'shoulda'
   gem 'shoulda-matchers'
-  gem 'rake'
 end
 
 group :cucumber do

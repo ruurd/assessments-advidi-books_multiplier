@@ -5,6 +5,7 @@
 
 BooksMultiplier::Application.routes.draw do
 
+  get 'keepalive', to: 'keepalive#keepalive'
   get 'change_locale', to: 'application#change_locale'
 
   scope '(:locale)' do
