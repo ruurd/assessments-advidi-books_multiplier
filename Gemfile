@@ -4,8 +4,6 @@
 #============================================================================
 source 'https://rubygems.org'
 
-ruby '1.9.3'
-
 # Regular RAILS stuff
 gem 'rails', '3.2.13'
 gem 'rails-i18n'
