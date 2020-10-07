@@ -5,7 +5,7 @@
 source 'https://rubygems.org'
 
 # Regular RAILS stuff
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.17'
 gem 'rails-i18n'
 gem 'rails_config'
 gem 'pg'
