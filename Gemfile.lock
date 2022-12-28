@@ -349,7 +349,7 @@ GEM
       execjs (>= 2.2.2, >= 2.2)
       less-rails (>= 2.5.0)
       railties (>= 3.1)
-    tzinfo (0.3.57)
+    tzinfo (0.3.61)
     uglifier (4.1.18)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
